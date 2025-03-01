@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1296</width>
+    <height>675</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Group_5</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="1.qrc">
+    <normaloff>:/2.png</normaloff>:/2.png</iconset>
+  </property>
+  <widget class="QLineEdit" name="massage_send_Edit">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>330</y>
+     <width>411</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>356</width>
+     <height>43</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color:rgb(255, 255, 255)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="comclose">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>410</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/5585233.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="comopen">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>410</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/5728139.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="massage_recelive_Edit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>90</y>
+     <width>322</width>
+     <height>422</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>322</width>
+     <height>422</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>341</width>
+     <height>411</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="documentTitle">
+    <string>Group5</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>480</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>关闭串口</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>90</y>
+     <width>181</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QComboBox" name="Com_port"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="com">
+      <property name="maximumSize">
+       <size>
+        <width>55</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>串口号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QComboBox" name="Baud_rate">
+      <property name="currentText">
+       <string>9600</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>9600</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>115200</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="baud">
+      <property name="maximumSize">
+       <size>
+        <width>55</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>波特率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QComboBox" name="Data_bit">
+      <property name="currentText">
+       <string>5</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>6</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>8</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="data">
+      <property name="maximumSize">
+       <size>
+        <width>55</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>数据位</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QComboBox" name="Stop_bit">
+      <item>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="stop">
+      <property name="maximumSize">
+       <size>
+        <width>55</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>停止位</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QComboBox" name="Check_bit">
+      <item>
+       <property name="text">
+        <string>no</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="check">
+      <property name="maximumSize">
+       <size>
+        <width>55</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color:rgb(255, 255, 255)</string>
+      </property>
+      <property name="text">
+       <string>校验位</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>110</y>
+     <width>301</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>490</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>打开串口</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>490</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearBt">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>410</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>65</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/6285088.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendBt">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>410</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>64</width>
+     <height>64</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/6588923.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>1341</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/94219763_p0.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>490</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>massage_send_Edit</zorder>
+  <zorder>comclose</zorder>
+  <zorder>comopen</zorder>
+  <zorder>massage_recelive_Edit</zorder>
+  <zorder>label_7</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>label</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_9</zorder>
+  <zorder>clearBt</zorder>
+  <zorder>sendBt</zorder>
+  <zorder>label_10</zorder>
+ </widget>
+ <resources>
+  <include location="1.qrc"/>
+ </resources>
+ <connections/>
+</ui>
